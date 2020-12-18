@@ -1,14 +1,17 @@
 .projects {
   margin: 20px 16px;
-  max-width: px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   &__title {
     @include header(32px, 32px);
     color: $grey-ish;
+    @include tablet {
+      @include header(38px, 32px);
+    }
   }
   &__img {
-    height: 220px;
+    width: 100%;
   }
   &__tags {
     display: flex;
@@ -45,7 +48,7 @@
   }
   &__card {
     margin: 20px 8px;
-    padding: 8px;
+    padding: 24px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -53,6 +56,12 @@
       animation-duration: 2s;
       animation-name: cardPulse;
       animation-iteration-count: infinite;
+      &::before {
+        border: none;
+      }
+      &::after {
+        border: none;
+      }
     }
     &::before {
       content: "";
@@ -74,22 +83,32 @@
       bottom: 0;
       right: 0;
     }
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 80%;
+    }
   }
   &__card-left {
-    height: 100%;
+    width: 100%;
     @include tablet {
-      width: 50%;
+      width: 40%;
     }
   }
   &__card-right {
     display: flex;
     flex-direction: column;
     @include tablet {
-      width: 50%;
+      width: 40%;
     }
   }
   &__card-title {
     @include subheader(24px, 24px);
+    @include tablet {
+      @include subheader(28px, 24px);
+    }
   }
   &__card-desc {
     margin: 0;
@@ -97,6 +116,9 @@
     &--grey {
       color: $grey-ish;
       margin-top: 4px;
+    }
+    @include tablet {
+      @include text(16px, 18px);
     }
   }
   &__btn {
@@ -108,28 +130,6 @@
     border: thin solid rgba(0, 0, 0, 0.3);
     padding: 8px 12px 6px;
     width: 120px;
-  }
-}
-
-// keyframes
-@keyframes CardBorderGrow {
-  0% {
-    opacity: 0.5;
-    height: 0;
-    width: 0;
-  }
-
-  99% {
-    opacity: 1;
-    width: 550px;
-    height: 350px;
-  }
-
-  to {
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-    width: 550px;
-    height: 350px;
-    opacity: 1;
   }
 }
 

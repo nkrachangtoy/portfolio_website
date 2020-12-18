@@ -10,7 +10,7 @@ const projects = {
     },
     BandSite: {
         name: "BandSite",
-        screenshot: "project-screenshots/bandsite-main-desktop.jpg",
+        screenshot: "project-screenshots/bandsite-show-desktop.jpg",
         github: "https://github.com/nkrachangtoy/nusorn-krachangtoy-bandsite",
         status: "Completed",
         desc: "A music band website project. This project focused on building a responsive, website based on the provided mock ups and design specs.",
@@ -19,7 +19,7 @@ const projects = {
     },
     InStock: {
         name: "InStock",
-        screenshot: "",
+        screenshot: "project-screenshots/instock.png",
         github: "https://github.com/nkrachangtoy/in-stock",
         status: "Completed",
         desc: "This is an inventory management system project. This project was focused on building a full-stack React application as a team. The main learning goal of this project was to create a robust Express backend server and communicate with React front-end.",

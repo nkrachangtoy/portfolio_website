@@ -8,7 +8,7 @@ export default function Projects() {
                <h1 className="projects__title">Projects</h1>
                <div className="projects__card">
                    <div className="projects__card-left">
-                       {/* <img className="projects__img" src={projects.BandSite.screenshot} alt={projects.BandSite.name}/> */}
+                       <img className="projects__img" src={projects.BrainFlix.screenshot} alt={projects.BrainFlix.name}/>
                    </div>
                    <div className="projects__card-right">
                        <h1 className="projects__card-title">{projects.BrainFlix.name}</h1>
@@ -24,7 +24,7 @@ export default function Projects() {
                </div>
                <div className="projects__card">
                    <div className="projects__card-left">
-                       {/* <img className="projects__img" src={projects.BandSite.screenshot} alt={projects.BandSite.name}/> */}
+                       <img className="projects__img" src={projects.BandSite.screenshot} alt={projects.BandSite.name}/>
                    </div>
                    <div className="projects__card-right">
                        <h1 className="projects__card-title">{projects.BandSite.name}</h1>
@@ -40,7 +40,7 @@ export default function Projects() {
                </div>
                <div className="projects__card">
                    <div className="projects__card-left">
-                       {/* <img className="projects__img" src={projects.BandSite.screenshot} alt={projects.BandSite.name}/> */}
+                       <img className="projects__img" src={projects.NetFlixClone.screenshot} alt={projects.NetFlixClone.name}/>
                    </div>
                    <div className="projects__card-right">
                        <h1 className="projects__card-title">{projects.NetFlixClone.name}</h1>
@@ -54,7 +54,7 @@ export default function Projects() {
                </div>
                <div className="projects__card">
                    <div className="projects__card-left">
-                       {/* <img className="projects__img" src={projects.BandSite.screenshot} alt={projects.BandSite.name}/> */}
+                       <img className="projects__img" src={projects.InStock.screenshot} alt={projects.InStock.name}/>
                    </div>
                    <div className="projects__card-right">
                        <h1 className="projects__card-title">{projects.InStock.name}</h1>
