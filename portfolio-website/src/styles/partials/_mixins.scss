@@ -1,0 +1,16 @@
+// Fonts //
+@mixin header($font-size, $line-height) {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: $font-size;
+  font-weight: 700;
+}
+@mixin subheader($font-size, $line-height) {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: $font-size;
+  font-weight: 600;
+}
+@mixin text($font-size, $line-height) {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: $font-size;
+  font-weight: 400;
+}
