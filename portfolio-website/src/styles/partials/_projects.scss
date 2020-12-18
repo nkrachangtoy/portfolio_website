@@ -1,0 +1,119 @@
+.projects {
+  margin: 20px 16px;
+  &__title {
+    @include header(32px, 32px);
+    color: $grey-ish;
+  }
+  &__img {
+    height: 220px;
+  }
+  &__tags {
+    display: flex;
+    flex-direction: row;
+  }
+  &__tag {
+    margin-top: 8px;
+    border-radius: 25px;
+    border: none;
+    color: #f8f8f8;
+    @include text(14px, 14px);
+    &--html {
+      background-color: $html;
+    }
+    &--css {
+      background-color: $css;
+    }
+    &--js {
+      background-color: $js;
+    }
+    &--react {
+      background-color: $react;
+    }
+    &--node {
+      background-color: $node;
+    }
+    &--express {
+      background-color: $express;
+    }
+  }
+  &__card {
+    margin: 20px 8px;
+    padding: 8px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-top: thin solid #aaa;
+      border-left: thin solid #aaa;
+      top: 0;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-bottom: thin solid #aaa;
+      border-right: thin solid #aaa;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &__card-left {
+    height: 100%;
+    @include tablet {
+      width: 50%;
+    }
+  }
+  &__card-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  &__card-title {
+    @include subheader(24px, 24px);
+  }
+  &__card-desc {
+    margin: 0;
+    @include text(14px, 14px);
+    &--grey {
+      color: $grey-ish;
+      margin-top: 4px;
+    }
+  }
+  &__btn {
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #333;
+    @include text(18px, 18px);
+    text-align: center;
+    border: thin solid rgba(0, 0, 0, 0.3);
+    padding: 8px 12px 6px;
+    width: 120px;
+  }
+}
+
+// keyframes
+@keyframes CardBorderGrow {
+  0% {
+    opacity: 0.5;
+    height: 0;
+    width: 0;
+  }
+
+  99% {
+    opacity: 1;
+    width: 550px;
+    height: 350px;
+  }
+
+  to {
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    width: 550px;
+    height: 350px;
+    opacity: 1;
+  }
+}
