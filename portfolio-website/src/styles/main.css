@@ -251,21 +251,21 @@ li {
           flex-direction: column;
 }
 
-.projects__card:hover {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: cardPulse;
-          animation-name: cardPulse;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.projects__card:hover::before {
-  border: none;
-}
-
-.projects__card:hover::after {
-  border: none;
+@media (min-width: 1024px) {
+  .projects__card:hover {
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: cardPulse;
+            animation-name: cardPulse;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .projects__card:hover::before {
+    border: none;
+  }
+  .projects__card:hover::after {
+    border: none;
+  }
 }
 
 .projects__card::before {

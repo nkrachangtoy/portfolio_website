@@ -52,15 +52,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    &:hover {
-      animation-duration: 2s;
-      animation-name: cardPulse;
-      animation-iteration-count: infinite;
-      &::before {
-        border: none;
-      }
-      &::after {
-        border: none;
+    @include desktop {
+      &:hover {
+        animation-duration: 2s;
+        animation-name: cardPulse;
+        animation-iteration-count: infinite;
+        &::before {
+          border: none;
+        }
+        &::after {
+          border: none;
+        }
       }
     }
     &::before {
