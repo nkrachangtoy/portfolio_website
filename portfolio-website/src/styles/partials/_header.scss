@@ -40,7 +40,11 @@
     width: 100%;
   }
   &__emoji {
+    font-size: 32px;
     margin: 0;
+    @include tablet {
+      font-size: 38px;
+    }
   }
   &__intro {
     &--title {

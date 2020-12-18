@@ -91,7 +91,14 @@ li {
 }
 
 .header__emoji {
+  font-size: 32px;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .header__emoji {
+    font-size: 38px;
+  }
 }
 
 .header__intro--title {
