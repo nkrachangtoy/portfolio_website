@@ -1,5 +1,8 @@
 .projects {
   margin: 20px 16px;
+  max-width: px;
+  display: flex;
+  flex-direction: column;
   &__title {
     @include header(32px, 32px);
     color: $grey-ish;
@@ -12,6 +15,10 @@
     flex-direction: row;
   }
   &__tag {
+    &:nth-child(2) {
+      margin-left: 0.25rem;
+      margin-right: 0.25rem;
+    }
     margin-top: 8px;
     border-radius: 25px;
     border: none;
@@ -40,7 +47,13 @@
     margin: 20px 8px;
     padding: 8px;
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      animation-duration: 2s;
+      animation-name: cardPulse;
+      animation-iteration-count: infinite;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -71,7 +84,9 @@
   &__card-right {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    @include tablet {
+      width: 50%;
+    }
   }
   &__card-title {
     @include subheader(24px, 24px);
@@ -115,5 +130,20 @@
     width: 550px;
     height: 350px;
     opacity: 1;
+  }
+}
+
+@keyframes cardPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.23);
+  }
+  50% {
+    transform: scale(1.015);
+    box-shadow: 0 0 35px 10px rgba(0, 0, 0, 0.17);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.23);
   }
 }
