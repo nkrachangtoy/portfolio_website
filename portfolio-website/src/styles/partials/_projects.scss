@@ -125,11 +125,16 @@
     margin-top: 1rem;
     text-decoration: none;
     color: #333;
-    @include text(18px, 18px);
+    @include text(16px, 16px);
     text-align: center;
     border: thin solid rgba(0, 0, 0, 0.3);
     padding: 8px 12px 6px;
     width: 120px;
+    @include desktop {
+      &:hover {
+        border: thin solid rgba($primary-color, 0.75);
+      }
+    }
   }
 }
 

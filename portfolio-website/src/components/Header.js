@@ -12,9 +12,8 @@ export default function Header() {
                 <span className="header__intro--title">Hello, my name is <span className="header__intro--purple">Nusorn,</span></span>
                 <p className="header__intro--para">I'm a full stack developer based in Vancouver, BC Canada. I've started my coding journey in March 2020.</p>
                 <div className="social-media">
-                    <a className="social-media__link" href="https://github.com/nkrachangtoy" tooltip="Github"><FontAwesomeIcon icon={faGithub}/></a>   
-                    <a className="social-media__link" href="https://www.linkedin.com/in/nkrachangtoy/" tooltip="Linkedin"><FontAwesomeIcon icon={faLinkedin}/></a>   
-                    <a className="social-media__link" href="milto:nkrachagtoy@gmail.com" tooltip="Email"><FontAwesomeIcon icon={faEnvelope}/></a>   
+                    <a className="social-media__link" href="https://github.com/nkrachangtoy" tooltip="Github"><FontAwesomeIcon icon={faGithub} size={"2x"}/></a>   
+                    <a className="social-media__link" href="https://www.linkedin.com/in/nkrachangtoy/" tooltip="Linkedin"><FontAwesomeIcon icon={faLinkedin} size={"2x"}/></a>     
                 </div>
             </div>
             <div className="header__right">
